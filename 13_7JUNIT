@@ -1,0 +1,21 @@
+package Exercise13_7;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class test_13_7 {
+
+@Test 
+void testMain() {
+  GeometricObject[] squares = {new Square (1), new Square (3)};
+  
+  assertEquals(5.0, squares[0].getArea());
+  assertEquals("Color All of the Sides", ((Square)squares[0]).HowToColor());
+  
+  assertEquals(10.0, squares[0].getArea());
+  assertEquals("Color All of the Sides", ((Square)squares[0]).HowToColor());
+  
+  
+  
+  }
+}
